@@ -3,16 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies..."
       - npm install
   build:
     commands:
-      - echo Build complete.
+      - echo "Build complete."
   post_build:
     commands:
-      - echo Build finished successfully.
+      - echo "Build finished successfully."
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: '/'
+    - "**/*"
+  base-directory: "dist"
