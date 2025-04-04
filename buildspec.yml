@@ -5,14 +5,13 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
+
   build:
     commands:
-      - echo "Build complete."
-  post_build:
-    commands:
-      - echo "Build finished successfully."
+      - echo "Building the project..."
+      - npm run build
 
 artifacts:
+  base-directory: build
   files:
-    - "**/*"
-  base-directory: "dist"
+    - '**/*'
