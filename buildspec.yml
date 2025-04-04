@@ -10,8 +10,9 @@ phases:
     commands:
       - echo "Building the project..."
       - npm run build
+      - ls -al  # ✅ Debug: check what folders/files exist after build
 
 artifacts:
-  base-directory: build
+  base-directory: build  # ✅ This assumes your build output goes to `build/` (e.g., React)
   files:
     - '**/*'
