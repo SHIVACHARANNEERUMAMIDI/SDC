@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies (none for static HTML)
+
+  build:
+    commands:
+      - echo Build phase (nothing to build for plain HTML)
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: public  # change this if your HTML files are in a different folder
